@@ -1,0 +1,224 @@
+/* Oblasti využití CSS */
+.use-cases-section {
+    padding: 100px 0;
+    background-color: rgba(248, 249, 250, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.use-cases-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.7) 0%, rgba(240,240,240,0.3) 100%);
+    z-index: -1;
+}
+
+.use-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.use-case-box {
+    border-radius: 18px;
+    padding: 35px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.use-case-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-color: rgba(200, 200, 200, 0.5);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.use-case-icon {
+    margin-bottom: 25px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 50%;
+    color: var(--color-accent);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05),
+                -5px -5px 15px rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.use-case-box:hover .use-case-icon {
+    color: var(--color-primary);
+    transform: scale(1.1);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1),
+                -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+.use-case-content {
+    flex-grow: 1;
+}
+
+.use-case-content h3 {
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    color: var(--color-primary);
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.use-case-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--color-accent);
+    border-radius: 3px;
+}
+
+.use-case-benefits {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.use-case-benefits li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-size: 1.05rem;
+    color: var(--color-text);
+}
+
+.use-case-benefits li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.use-case-testimonial {
+    background-color: rgba(245, 245, 245, 0.7);
+    padding: 25px;
+    border-radius: 15px;
+    margin-top: 25px;
+    position: relative;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(230, 230, 230, 0.6);
+}
+
+.use-case-testimonial::before {
+    content: '\201C';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.1);
+    font-family: Georgia, serif;
+    line-height: 1;
+}
+
+.use-case-testimonial blockquote {
+    margin: 0 0 15px 0;
+    padding-left: 5px;
+    font-style: italic;
+    color: var(--color-text);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+}
+
+.use-case-testimonial cite {
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-accent);
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.use-cases-cta {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.use-cases-cta .btn-primary {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-size: 1.05rem;
+}
+
+.use-cases-cta .btn-primary:hover {
+    background-color: var(--color-accent);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+/* Responzivní design */
+@media (max-width: 1024px) {
+    .use-cases-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .use-cases-section {
+        padding: 70px 0;
+    }
+    
+    .use-cases-grid {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+    
+    .use-case-box {
+        padding: 25px;
+    }
+    
+    .use-case-icon {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .use-case-content h3 {
+        font-size: 1.5rem;
+    }
+}

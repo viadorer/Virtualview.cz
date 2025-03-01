@@ -1,0 +1,318 @@
+/* Pricing section styles */
+.pricing-section {
+    padding: 5rem 0;
+    background-color: var(--color-bg-light);
+}
+
+.pricing-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.pricing-intro {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.pricing-intro p {
+    max-width: 800px;
+    margin: 1rem auto;
+    color: var(--color-text);
+}
+
+.pricing-tables {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+    .pricing-tables {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.pricing-table {
+    background-color: rgba(240, 255, 240, 0.65);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-table:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.pricing-header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.pricing-dots {
+    display: flex;
+    gap: 7px;
+}
+
+.pricing-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-dot-red {
+    background-color: #ff5f57;
+}
+
+.pricing-dot-yellow {
+    background-color: #febc2e;
+}
+
+.pricing-dot-green {
+    background-color: #28c840;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+th {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.pricing-features {
+    padding: 2rem;
+}
+
+.pricing-features h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    padding: 0.6rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list li::before {
+    content: "✔";
+    color: var(--color-primary);
+    margin-right: 10px;
+}
+
+.pricing-note {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--color-text-light);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.price-column {
+    text-align: right;
+    font-weight: 600;
+}
+
+.pricing-discounts {
+    margin-top: 2rem;
+}
+
+.pricing-discounts h3 {
+    margin-bottom: 1rem;
+}
+
+.discount-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.discount-list li {
+    padding: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    th, td {
+        padding: 0.8rem 1rem;
+    }
+    
+    .pricing-features {
+        padding: 1.5rem;
+    }
+}
+
+/* Kalkulátor ceny */
+.price-calculator {
+    margin: 3rem auto 0;
+    max-width: 800px;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.price-calculator h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.75rem;
+    color: var(--color-primary);
+}
+
+.price-calculator p {
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+}
+
+.calculator-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group:last-of-type {
+    grid-column: span 2;
+    align-items: flex-start;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.calculator-input {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: var(--color-text-dark);
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.calculator-input:hover, .calculator-input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+}
+
+#calculate-price {
+    justify-self: start;
+    margin-top: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+#calculate-price:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.calculator-result {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.calculator-result h4 {
+    margin-top: 0;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.price-result {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.result-note {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    margin-bottom: 1.5rem;
+}
+
+.calculator-cta {
+    margin-top: 1rem;
+}
+
+.btn-secondary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* Responzivní design pro kalkulátor */
+@media (max-width: 768px) {
+    .calculator-form {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-group:last-of-type {
+        grid-column: 1;
+    }
+    
+    .price-calculator {
+        padding: 1.5rem;
+    }
+    
+    .price-result {
+        font-size: 2rem;
+    }
+}

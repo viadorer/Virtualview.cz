@@ -1,0 +1,227 @@
+.tech-process-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.06) 100%);
+}
+
+.tech-title {
+    margin-bottom: 50px;
+}
+
+.tech-process-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tech-process-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.tech-process-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.tech-process-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.tech-process-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.tech-process-image:hover img {
+    transform: scale(1.02);
+}
+
+.tech-process-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.tech-process-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.tech-process-content h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 3px;
+}
+
+.tech-process-content p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.tech-features {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tech-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tech-feature-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color-light) 0%, var(--secondary-color-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tech-feature-icon svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--primary-color);
+}
+
+.tech-feature-text h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.tech-feature-text p {
+    font-size: 14px;
+    margin-bottom: 0;
+    opacity: 0.85;
+}
+
+.tech-specs {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tech-specs h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.tech-specs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tech-spec-item {
+    text-align: center;
+}
+
+.tech-spec-value {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    display: block;
+}
+
+.tech-spec-label {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.tech-compare {
+    margin-top: 60px;
+}
+
+.tech-compare h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.compare-table thead th {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 80%);
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+}
+
+.compare-table tbody tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.compare-table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+.compare-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.compare-table tr:last-child td {
+    border-bottom: none;
+}
+
+.compare-check {
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.compare-x {
+    color: #e74c3c;
+}
+
+@media (max-width: 991px) {
+    .tech-process-row {
+        flex-direction: column;
+    }
+    
+    .tech-process-row.reverse {
+        flex-direction: column;
+    }
+    
+    .tech-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .tech-specs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .tech-specs-grid {
+        grid-template-columns: 1fr;
+    }
+}

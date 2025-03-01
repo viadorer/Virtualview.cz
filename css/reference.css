@@ -1,0 +1,218 @@
+/* Reference a případové studie sekce */
+.reference-section {
+    padding: 80px 0;
+}
+
+.reference-tabs {
+    margin-top: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+}
+
+.reference-tab-header {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.reference-dots {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.reference-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.reference-dot-red {
+    background-color: #ff5f57;
+}
+
+.reference-dot-yellow {
+    background-color: #ffbd2e;
+}
+
+.reference-dot-green {
+    background-color: #28ca41;
+}
+
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tab-button {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+}
+
+.tab-button.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--accent-color);
+}
+
+.reference-tab-content {
+    padding: 30px;
+    min-height: 400px;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.case-study-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+.case-study-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.case-study-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.case-study-image {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+.case-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.case-study-card:hover .case-image {
+    transform: scale(1.05);
+}
+
+.view-3d-button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.case-study-card:hover .view-3d-button {
+    opacity: 1;
+}
+
+.case-study-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.case-study-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: var(--accent-color);
+}
+
+.case-meta {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+}
+
+.case-description {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.case-results {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 15px;
+}
+
+.result-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.result-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.result-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.reference-cta {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.reference-cta p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Responzivní design */
+@media (max-width: 768px) {
+    .case-study-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .tab-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .tab-button {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .reference-tab-content {
+        padding: 20px 15px;
+    }
+}
