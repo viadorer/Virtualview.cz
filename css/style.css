@@ -962,6 +962,22 @@ header {
         grid-template-columns: 1fr;
     }
 }
+/* Contact Form Section */
+.contact-section {
+    background: rgba(240, 255, 240, 0.65);
+    padding: 80px 0;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 112, 243, 0.15);
+}
+
 /* Footer Styles */
 .footer {
     padding: 60px 0 30px;
