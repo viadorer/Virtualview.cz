@@ -1,0 +1,89 @@
+/* Matterport Camera Styles */
+.virtual-capture-preview {
+    position: relative;
+}
+
+.matterport-camera {
+    position: absolute;
+    top: -60px;
+    right: -40px;
+    width: 180px;
+    height: 180px;
+    z-index: 10;
+    background: radial-gradient(circle at center, rgba(85, 85, 85, 0.8) 0%, rgba(33, 33, 33, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.7;
+    animation: pulse 4s infinite alternate;
+}
+
+.camera-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(51, 51, 51, 0.5);
+    z-index: 11;
+}
+
+.camera-overlay::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #333333 0%, #555555 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(51, 51, 51, 0.8);
+}
+
+.camera-overlay::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    animation: blink 3s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.9;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0.4;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(51, 51, 51, 0.5);
+    }
+    100% {
+        opacity: 0.4;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+}

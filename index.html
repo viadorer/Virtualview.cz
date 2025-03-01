@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VirtualView - 3D skeny nemovitostí</title>
+    <meta name="description" content="Profesionální 3D skenování nemovitostí technologií Matterport pro realitní kanceláře a developery">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <div class="logo-symbol">
+                        <svg class="logo-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L5 12.5V27.5L20 35L35 27.5V12.5L20 5Z" fill="rgba(255,255,255,0.9)" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+                            <path d="M20 15L10 20V26L20 31L30 26V20L20 15Z" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1" />
+                        </svg>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-primary">VirtualView</span>
+                        <span class="logo-secondary">3D scanning</span>
+                    </div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#sluzby">Služby</a></li>
+                    <li><a href="#o-nas">O nás</a></li>
+                    <li><a href="#cenik">Ceník</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+                <div class="language-selector">
+                    <span class="language-option active">CZ</span>
+                    <span class="language-option">EN</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="matterport-container">
+            <iframe width="100%" height="100%" src="https://my.matterport.com/show/?m=m1EauR8QvdC&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
+            
+            <!-- Ovládací prvky pro Matterport -->
+            <div class="matterport-controls">
+                <button class="mp-control mp-fullscreen" title="Celá obrazovka">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"></path><path d="M21 8V5a2 2 0 0 0-2-2h-3"></path><path d="M3 16v3a2 2 0 0 0 2 2h3"></path><path d="M16 21h3a2 2 0 0 0 2-2v-3"></path></svg>
+                </button>
+                <button class="mp-control mp-help" title="Nápověda">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                </button>
+                <button class="mp-control mp-dollhouse" title="Pohled z výšky">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Hero content - pouze tlačítka bez překryvné vrstvy -->
+        <div class="hero-content-floating">
+            <div class="hero-text">
+                <h1>3D skenování nemovitostí</h1>
+                <p>Vytváříme virtuální prohlídky, které prodávají. Nejmodernější technologie Matterport pro realitní kanceláře, developery a majitele komerčních prostor.</p>
+                <div class="hero-cta">
+                    <a href="#kontakt" class="btn">Nezávazná poptávka</a>
+                    <a href="#sluzby" class="btn btn-outline">Služby</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <!-- Jak můžeme pomoci vaší společnosti -->
+    <section id="pomoc" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Jak můžeme pomoci vaší společnosti?</h2>
+                <p>Na oblasti vašeho podnikání nezáleží. Dokážeme kvalitně a rychle naskenovat byty, domy, obchody, kanceláře, haly, stejně jako kulturní prostory. Nejste si jisti, že pomůžeme s virtuálními plány zrovna vaší nemovitosti? Kontaktujte nás, jistě se domluvíme.</p>
+            </div>
+            
+            <div class="use-cases-grid">
+                <div class="use-case-card glass-card">
+                    <div class="use-case-icon">
+                        <img src="img/Real-Estate@2x.png" alt="Nemovitosti ikona">
+                    </div>
+                    <h3>Nemovitosti</h3>
+                    <p>Nabídněte svým klientům dokonalou virtuální prohlídku nemovitosti. Díky tagům můžete snadno sdílet podrobnosti o každém detailu prostoru.</p>
+                    <a href="#" class="btn-link">Zjistit více</a>
+                </div>
+                
+                <div class="use-case-card glass-card">
+                    <div class="use-case-icon">
+                        <img src="img/Retail@2x.png" alt="Retail ikona">
+                    </div>
+                    <h3>Retail</h3>
+                    <p>Předběhněte konkurenci a nabídněte svým zákazníkům jedinečný zážitek z nakupování online. Atmosféru vašeho obchodu tak můžou zažívat lidé doslova po celém světě.</p>
+                    <a href="#" class="btn-link">Zjistit více</a>
+                </div>
+                
+                <div class="use-case-card glass-card">
+                    <div class="use-case-icon">
+                        <img src="img/Hospitality@2x.png" alt="Pohostinství ikona">
+                    </div>
+                    <h3>Pohostinství</h3>
+                    <p>Představte klientům svůj hotel nebo restauraci detailní virtuální prohlídkou. Dopřejte návštěvníkům zažít náladu vašeho místa ještě předtím, než k vám zavítají naživo.</p>
+                    <a href="#" class="btn-link">Zjistit více</a>
+                </div>
+                
+                <div class="use-case-card glass-card">
+                    <div class="use-case-icon">
+                        <img src="img/Insurance-1@2x.png" alt="Pojišťovnictví ikona">
+                    </div>
+                    <h3>Pojišťovnictví</h3>
+                    <p>Detailní 3D model nemovitosti zvýší vaše šance, že se případná pojistná událost vyřeší správně – ať už jste v roli pojištěnce, anebo pojišťovny.</p>
+                    <a href="#" class="btn-link">Zjistit více</a>
+                </div>
+                
+                <div class="use-case-card glass-card">
+                    <div class="use-case-icon">
+                        <img src="img/Education@2x.png" alt="Vzdělávání ikona">
+                    </div>
+                    <h3>Vzdělávání</h3>
+                    <p>Vytvořte virtuální prohlídky škol, laboratoří a jiných vzdělávacích prostor. Umožněte potenciálním studentům prozkoumat vaše prostory z pohodlí domova.</p>
+                    <a href="#" class="btn-link">Zjistit více</a>
+                </div>
+                
+                <div class="use-case-card glass-card">
+                    <div class="use-case-icon">
+                        <img src="img/Construction@2x.png" alt="Stavebnictví ikona">
+                    </div>
+                    <h3>Stavebnictví</h3>
+                    <p>Zdokumentujte průběh stavby nebo rekonstrukce. Vytvořte digitální archiv pro kontrolu postupu prací a pro pozdější reference při údržbě budovy.</p>
+                    <a href="#" class="btn-link">Zjistit více</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Služby -->
+    <section id="sluzby" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Naše služby</h2>
+                <p>Profesionální 3D skenování pro různé typy nemovitostí</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="#0070f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 22V12H15V22" stroke="#0070f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Rezidenční nemovitosti</h3>
+                    <p>Kompletní 3D sken bytů a domů pro realitní kanceláře a individuální majitele. Virtuální prohlídky urychlují prodej a šetří čas všem zúčastněným.</p>
+                    <a href="#kontakt" class="btn btn-outline">Zjistit více</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" stroke="#0070f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 9H21" stroke="#0070f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 21V9" stroke="#0070f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Komerční prostory</h3>
+                    <p>3D skenování kanceláří, showroomů, obchodů a restaurací. Pomozte vašim klientům prohlédnout si prostory online ještě před osobní návštěvou.</p>
+                    <a href="#kontakt" class="btn btn-outline">Zjistit více</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#0070f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#0070f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13" stroke="#0070f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#0070f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Hotely a turistické objekty</h3>
+                    <p>Zvyšte atraktivitu vašeho ubytovacího zařízení virtuální prohlídkou. Hosté si mohou prohlédnout pokoje, lobby a další prostory ještě před rezervací.</p>
+                    <a href="#kontakt" class="btn btn-outline">Zjistit více</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtuální zachycení prostoru -->
+    <section id="virtual-capture" class="section">
+        <div class="container">
+            <div class="virtual-capture-content">
+                <div class="virtual-capture-text">
+                    <h2>Vy máte prostor. My ho zachytíme virtuálně</h2>
+                    <p>Ať už máte s vaší nemovitostí plány jakékoliv, náš virtuální model vám přinese spoustu hodnotných funkcí. Interaktivní prohlídku včetně tagů s popisem prvků v interiéru, půdorys s přesnými rozměry nebo precizní 3D model.</p>
+                    <p>Domluvíme si návštěvu a o zbytek už se postaráme s naší profesionální 3D technikou. Kompletní virtuální dokumentaci bytu či budovy můžete mít už za 24 hodin poté.</p>
+                    <a href="#kontakt" class="btn">Nezávazná konzultace</a>
+                </div>
+                <div class="virtual-capture-preview">
+                    <div class="preview-frame glass-effect">
+                        <iframe width="100%" height="100%" src="https://my.matterport.com/show/?m=m1EauR8QvdC&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
