@@ -24,11 +24,15 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: var(--font-base);
     line-height: 1.6;
     color: var(--color-text);
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow-x: visible;
+    width: 100%;
 }
 
 img {
@@ -52,6 +56,24 @@ ul {
     margin: 0 auto;
     padding: 0 var(--spacing-sm);
 }
+
+/* Zajišťuje, že obsah může mít kontejner, ale obalové prvky mohou být na celou šířku */
+.full-width-wrapper {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    left: 0;
+    right: 0;
+}
+
+.contact-bg {
+    background-color: rgba(240, 255, 240, 0.65);
+}
+
+
 
 .btn {
     display: inline-block;
@@ -964,8 +986,9 @@ header {
 }
 /* Contact Form Section */
 .contact-section {
-    background: rgba(240, 255, 240, 0.65);
     padding: 80px 0;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .contact-form-container {
@@ -981,10 +1004,14 @@ header {
 /* Footer Styles */
 .footer {
     padding: 60px 0 30px;
-    background: rgba(240, 255, 240, 0.65);
     position: relative;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    box-sizing: border-box;
+    background-color: rgba(240, 255, 240, 0.65);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
 }
 
 .footer-content {

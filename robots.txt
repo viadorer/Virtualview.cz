@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /scripts/
+Disallow: /temp/
+Disallow: /cgi-bin/
+
+Sitemap: https://virtualview.cz/sitemap.xml
