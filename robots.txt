@@ -1,8 +1,40 @@
+# robots.txt pro VirtualView.cz
+# Aktualizováno: 2025-03-04
+
+# Globální pravidla pro všechny roboty
 User-agent: *
 Disallow: /admin/
 Disallow: /includes/
 Disallow: /scripts/
 Disallow: /temp/
 Disallow: /cgi-bin/
+Disallow: /error/
+Disallow: /api/
+Disallow: /*?*
+Disallow: /*.json$
+Disallow: /*.xml$
+Allow: /sitemap.xml
 
+# Pravidla pro Google
+User-agent: Googlebot
+Allow: /*.js$
+Allow: /*.css$
+
+# Pravidla pro Google Image
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Pravidla pro Bing
+User-agent: Bingbot
+Allow: /*.js$
+Allow: /*.css$
+
+# Ostatní pravidla
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Sitemap lokace
 Sitemap: https://virtualview.cz/sitemap.xml

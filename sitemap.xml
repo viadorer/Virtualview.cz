@@ -1,19 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+            http://www.google.com/schemas/sitemap-image/1.1
+            http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+  <!-- Hlavní stránka -->
   <url>
     <loc>https://virtualview.cz/</loc>
-    <lastmod>2025-03-03T14:00:00+01:00</lastmod>
+    <lastmod>2025-03-04T21:00:00+01:00</lastmod>
     <priority>1.00</priority>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://virtualview.cz/images/logo_virtualview.png</image:loc>
+      <image:title>VirtualView Logo</image:title>
+    </image:image>
   </url>
+  
+  <!-- Oblasti využití -->
   <url>
     <loc>https://virtualview.cz/oblasti-vyuziti.html</loc>
-    <lastmod>2025-03-03T14:00:00+01:00</lastmod>
+    <lastmod>2025-03-04T21:00:00+01:00</lastmod>
     <priority>0.80</priority>
     <changefreq>monthly</changefreq>
   </url>
-  <!-- Zde přidejte další URL vašeho webu -->
+  
+  <!-- Chybová stránka 404 -->
+  <url>
+    <loc>https://virtualview.cz/404.html</loc>
+    <lastmod>2025-03-04T21:00:00+01:00</lastmod>
+    <priority>0.20</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  
+  <!-- FAQ sekce (pokud je dostupná jako samostatná stránka) -->
+  <url>
+    <loc>https://virtualview.cz/faq-section.html</loc>
+    <lastmod>2025-03-04T21:00:00+01:00</lastmod>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>

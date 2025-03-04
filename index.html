@@ -12,9 +12,26 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://virtualview.cz/">
     
+    <!-- Mobile Meta -->
+    <meta name="theme-color" content="#4caf50">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="application-name" content="VirtualView">
+    <meta name="apple-mobile-web-app-title" content="VirtualView">
+    
     <!-- Favicon a Apple Touch ikonky -->
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Preconnect a DNS-prefetch pro zrychlení načítání -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://my.matterport.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -22,14 +39,28 @@
     <meta property="og:title" content="VirtualView - Profesionální 3D skenování nemovitostí">
     <meta property="og:description" content="Vytváříme virtuální 3D prohlídky nemovitostí, které prodávají. Technologie Matterport pro realitní kanceláře a developery.">
     <meta property="og:image" content="https://virtualview.cz/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="VirtualView">
     <meta property="og:locale" content="cs_CZ">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://virtualview.cz/">
     <meta name="twitter:title" content="VirtualView - Profesionální 3D skenování nemovitostí">
     <meta name="twitter:description" content="Vytváříme virtuální 3D prohlídky nemovitostí, které prodávají. Technologie Matterport pro realitní kanceláře a developery.">
     <meta name="twitter:image" content="https://virtualview.cz/images/twitter-image.jpg">
+    
+    <!-- Alternativní jazyky -->
+    <link rel="alternate" hreflang="cs" href="https://virtualview.cz/">
+    <link rel="alternate" hreflang="en" href="https://virtualview.cz/en/">
+    <link rel="alternate" hreflang="x-default" href="https://virtualview.cz/">
+    
+    <!-- Preload kritických zdrojů -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/3d-tech.css" as="style">
+    <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="images/logo_virtualview.png" as="image">
     
     <!-- CSS soubory -->
     <link rel="stylesheet" href="css/style.css">
@@ -41,25 +72,34 @@
     <link rel="stylesheet" href="css/3d-tech.css">
     
     <!-- Fonty -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Datová vrstva pro GTM -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            'pageType': 'home',
+            'userType': 'visitor',
+            'pageName': 'Homepage',
+            'websiteRegion': 'CZ'
+        });
+    </script>
     
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+    })(window,document,'script','dataLayer','GTM-NJKSM7T');</script>
     <!-- End Google Tag Manager -->
     
     <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1F45B7XTE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
+        gtag('config', 'G-L1F45B7XTE');
     </script>
     
     <!-- Structured Data (JSON-LD) pro Local Business -->
@@ -71,13 +111,17 @@
         "image": "https://virtualview.cz/images/logo_virtualview.png",
         "@id": "https://virtualview.cz",
         "url": "https://virtualview.cz",
-        "telephone": "+420XXXXXXXXX",
+        "telephone": "+420777123456",
+        "email": "info@virtualview.cz",
+        "description": "Vytváříme virtuální 3D prohlídky nemovitostí, které prodávají. Profesionální služby 3D skenování technologií Matterport.",
+        "priceRange": "$$$",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Plzeň",
             "addressRegion": "Plzeňský kraj",
             "postalCode": "301 00",
-            "addressCountry": "CZ"
+            "addressCountry": "CZ",
+            "streetAddress": "Náměstí Republiky 4"
         },
         "geo": {
             "@type": "GeoCoordinates",
@@ -100,6 +144,73 @@
             "https://facebook.com/virtualview",
             "https://instagram.com/virtualview",
             "https://linkedin.com/company/virtualview"
+        ]
+    }
+    </script>
+    
+    <!-- Structured Data pro Service/Product -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "3D skenování nemovitostí",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "VirtualView",
+            "url": "https://virtualview.cz"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Česká republika"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "12.00",
+            "priceCurrency": "CZK",
+            "priceValidUntil": "2025-12-31",
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+                "@type": "UnitPriceSpecification",
+                "priceType": "https://schema.org/UnitPriceSpecification",
+                "price": "12.00",
+                "priceCurrency": "CZK",
+                "unitText": "m2"
+            }
+        },
+        "description": "Profesionální 3D skenování nemovitostí pomocí technologie Matterport. Vytváříme virtuální prohlídky, které napomohou rychlejšímu prodeje či pronájmu nemovitostí."
+    }
+    </script>
+
+    <!-- Structured Data pro FAQ -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Jak dlouho trvá vytvoření virtuální prohlídky?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Celý proces se skládá ze tří fází: skenování nemovitosti (trvající cca 1-3 hodiny podle velikosti), zpracování dat (24-48 hodin) a finální úpravy a dodání (cca 24 hodin). Celková doba je tedy obvykle 2-4 dny od začátku skenování k dodání finální 3D prohlídky."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kolik virtulní prohlídka stojí?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cena se odvíjí od velikosti nemovitosti a začíná na 12 Kč/m² u nemovitostí nad 500 m². U menších prostorů (do 100 m²) je cena 15 Kč/m², u prostorů 100-500 m² je cena 13 Kč/m². Minimální účtovaná plocha je 50 m²."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Na jakých zařízeních je virtuální prohlídka dostupná?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Naše 3D virtuální prohlídky lze pohodlně prohlížet na počítačích s Windows, MacOS či Linuxem a zároveň na mobilních telefonech nebo tabletech se systémy Android a iOS. K prohlížení stačí běžný internetový prohlížeč – není potřeba žádný zvláštní software."
+                }
+            }
         ]
     }
     </script>
@@ -154,7 +265,7 @@
     <!-- Hero -->
     <section class="hero">
         <div class="matterport-container">
-            <iframe width="100%" height="100%" src="https://my.matterport.com/show/?m=m1EauR8QvdC&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
+            <iframe width="100%" height="100%" src="https://my.matterport.com/show/?m=m1EauR8QvdC&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" loading="lazy" title="Matterport 3D virtuální prohlídka hlavní ukázka"></iframe>
             
             <!-- Ovládací prvky pro Matterport -->
             <div class="matterport-controls">
@@ -290,7 +401,7 @@
                 </div>
                 <div class="virtual-capture-preview">
                     <div class="preview-frame glass-effect">
-                        <iframe width="100%" height="100%" src="https://my.matterport.com/show/?m=G9NSaJAQVwu&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
+                        <iframe width="100%" height="100%" src="https://my.matterport.com/show/?m=G9NSaJAQVwu&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" loading="lazy" title="Matterport 3D virtuální prohlídka ukázka tech procesu"></iframe>
                     </div>
                 </div>
             </div>
@@ -660,7 +771,7 @@
                     <div class="case-study-container">
                         <div class="case-study-card glass-card">
                             <div class="case-study-image">
-                                <iframe width="100%" src="https://my.matterport.com/show/?m=mGeM4pseZc7&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
+                                <iframe width="100%" src="https://my.matterport.com/show/?m=mGeM4pseZc7&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" loading="lazy" title="Matterport 3D virtuální prohlídka reference 1"></iframe>
                             </div>
                             <div class="case-study-content">
                                 <h3>Luxusní byt Praha 5</h3>
@@ -681,7 +792,7 @@
                         
                         <div class="case-study-card glass-card">
                             <div class="case-study-image">
-                                <iframe width="100%" src="https://my.matterport.com/show/?m=HQx1UGShbS3&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
+                                <iframe width="100%" src="https://my.matterport.com/show/?m=HQx1UGShbS3&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" loading="lazy" title="Matterport 3D virtuální prohlídka reference 2"></iframe>
                             </div>
                             <div class="case-study-content">
                                 <h3>Developerský projekt Plzeň</h3>
@@ -707,7 +818,7 @@
                     <div class="case-study-container">
                         <div class="case-study-card glass-card">
                             <div class="case-study-image">
-                                <iframe width="100%" src="https://my.matterport.com/show/?m=G3oPD56LnSV&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
+                                <iframe width="100%" src="https://my.matterport.com/show/?m=G3oPD56LnSV&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" loading="lazy" title="Matterport 3D virtuální prohlídka reference 3"></iframe>
                             </div>
                             <div class="case-study-content">
                                 <h3>Hotel Centrum Praha</h3>
@@ -733,7 +844,7 @@
                     <div class="case-study-container">
                         <div class="case-study-card glass-card">
                             <div class="case-study-image">
-                                <iframe width="100%" src="https://my.matterport.com/show/?m=G9NSaJAQVwu&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
+                                <iframe width="100%" src="https://my.matterport.com/show/?m=G9NSaJAQVwu&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" loading="lazy" title="Matterport 3D virtuální prohlídka reference 4"></iframe>
                             </div>
                             <div class="case-study-content">
                                 <h3>Regionální muzeum Plzeň</h3>
@@ -759,7 +870,7 @@
                     <div class="case-study-container">
                         <div class="case-study-card glass-card">
                             <div class="case-study-image">
-                                <iframe width="100%" src="https://my.matterport.com/show/?m=m1EauR8QvdC&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;"></iframe>
+                                <iframe width="100%" src="https://my.matterport.com/show/?m=m1EauR8QvdC&play=1&qs=1&brand=0&help=0" frameborder="0" allowfullscreen allow="autoplay; fullscreen; web-share; xr-spatial-tracking;" loading="lazy" title="Matterport 3D virtuální prohlídka reference 5"></iframe>
                             </div>
                             <div class="case-study-content">
                                 <h3>Výrobní závod Beroun</h3>
@@ -884,6 +995,7 @@
         <div class="section-title">
             <h2>Kontaktujte nás</h2>
             <p>Máte zájem o 3D skenování vaší nemovitosti nebo potřebujete více informací? Neváhejte nás kontaktovat.</p>
+            <p>Naši specialisté jsou připraveni zodpovědět všechny Vaše dotazy, připravit individuální nabídku nebo domluvit osobní konzultaci. Ať už potřebujete naskenovat jeden byt, celou kancelářskou budovu nebo průmyslový prostor, jsme zde pro Vás. Působíme primárně v Plzni a Praze, ale na základě domluvy zajišťujeme skenování po celé České republice.</p>
         </div>
         <div class="contact-form-container">
             <script>
