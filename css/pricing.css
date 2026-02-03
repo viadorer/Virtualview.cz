@@ -4,6 +4,29 @@
     background-color: var(--color-bg-light);
 }
 
+/* Promo badge */
+.promo-badge {
+    color: #d63031;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+/* Old and new price styling */
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    opacity: 0.7;
+}
+
+.new-price {
+    color: #ff6b6b;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
 .pricing-container {
     max-width: 1200px;
     margin: 0 auto;
