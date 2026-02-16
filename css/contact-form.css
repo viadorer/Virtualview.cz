@@ -4,6 +4,11 @@
     padding: 5rem 0;
 }
 
+.contact-section .section-title h2,
+.contact-section .section-title p {
+    color: #333;
+}
+
 .contact-form-wrapper {
     max-width: 800px;
     margin: 0 auto;
