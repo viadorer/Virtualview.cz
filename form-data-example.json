@@ -1,0 +1,62 @@
+{
+  "contact": {
+    "name": "Jan Novák",
+    "email": "jan.novak@email.cz",
+    "phone": "+420603834921"
+  },
+  "property": {
+    "type": "byt",
+    "type_options": [
+      "byt",
+      "rodinny-dum",
+      "komercni-prostor",
+      "hotel-restaurace",
+      "kulturni-instituce",
+      "prumyslovy-objekt",
+      "jine"
+    ],
+    "area": 80,
+    "area_unit": "m²",
+    "location": "Praha"
+  },
+  "project": {
+    "purpose": "prodej",
+    "purpose_options": [
+      "prodej",
+      "pronajem",
+      "marketing",
+      "dokumentace",
+      "archiv",
+      "jine"
+    ],
+    "services": [
+      "3d-scan",
+      "pudorys",
+      "fotografie"
+    ],
+    "services_options": [
+      "3d-scan",
+      "pudorys",
+      "fotografie",
+      "video",
+      "google-street"
+    ],
+    "timeline": "tyden",
+    "timeline_options": [
+      "co-nejdrive",
+      "tyden",
+      "mesic",
+      "flexibilni"
+    ]
+  },
+  "message": "Potřebuji naskenovat byt pro prodej. Zajímá mě také cena za půdorys.",
+  "consent": true,
+  "metadata": {
+    "form_version": "1.0",
+    "submitted_at": "2026-02-16T22:12:00+01:00",
+    "source": "virtualview.cz",
+    "utm_source": null,
+    "utm_medium": null,
+    "utm_campaign": null
+  }
+}

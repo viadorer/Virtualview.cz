@@ -70,6 +70,7 @@
     <link rel="stylesheet" href="css/reference.css">
     <link rel="stylesheet" href="css/oblasti-vyuziti.css">
     <link rel="stylesheet" href="css/3d-tech.css">
+    <link rel="stylesheet" href="css/contact-form.css">
     
     <!-- Fonty -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -93,13 +94,13 @@
     })(window,document,'script','dataLayer','GTM-NJKSM7T');</script>
     <!-- End Google Tag Manager -->
     
-    <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1F45B7XTE"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BT80LH48RK"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'G-L1F45B7XTE');
+        gtag('config', 'G-BT80LH48RK');
     </script>
     
     <!-- Structured Data (JSON-LD) pro Local Business -->
@@ -111,17 +112,17 @@
         "image": "https://virtualview.cz/images/logo_virtualview.png",
         "@id": "https://virtualview.cz",
         "url": "https://virtualview.cz",
-        "telephone": "+420777123456",
+        "telephone": "+420603834921",
         "email": "info@virtualview.cz",
         "description": "Vytváříme virtuální 3D prohlídky nemovitostí, které prodávají. Profesionální služby 3D skenování technologií Matterport.",
-        "priceRange": "$$$",
+        "priceRange": "$$",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Plzeň",
             "addressRegion": "Plzeňský kraj",
-            "postalCode": "301 00",
+            "postalCode": "326 00",
             "addressCountry": "CZ",
-            "streetAddress": "Náměstí Republiky 4"
+            "streetAddress": "Radyňská 33"
         },
         "geo": {
             "@type": "GeoCoordinates",
@@ -1005,15 +1006,111 @@
             <p>Máte zájem o 3D skenování vaší nemovitosti nebo potřebujete více informací? Neváhejte nás kontaktovat.</p>
             <p>Naši specialisté jsou připraveni zodpovědět všechny Vaše dotazy, připravit individuální nabídku nebo domluvit osobní konzultaci. Ať už potřebujete naskenovat jeden byt, celou kancelářskou budovu nebo průmyslový prostor, jsme zde pro Vás. Působíme primárně v Plzni a Praze, ale na základě domluvy zajišťujeme skenování po celé České republice.</p>
         </div>
-        <div class="contact-form-container">
-            <script>
-                (function (w,d,s,o,f,js,fjs) {
-                    w['ecm-widget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
-                    js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-                    js.id = '20-85f7dba955e715936a175d446bc6f115'; js.dataset.a = 'ptf'; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
-                }(window, document, 'script', 'ecmwidget', 'https://d70shl7vidtft.cloudfront.net/widget.js'));
-            </script>
-            <div id="f-20-85f7dba955e715936a175d446bc6f115"></div>
+        <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form glass-card">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Jméno a příjmení *</label>
+                        <input type="text" id="name" name="name" required placeholder="Jan Novák">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="jan.novak@email.cz">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Telefon *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+420 123 456 789">
+                    </div>
+                    <div class="form-group">
+                        <label for="property-type">Typ nemovitosti *</label>
+                        <select id="property-type" name="property-type" required>
+                            <option value="">Vyberte typ</option>
+                            <option value="byt">Byt</option>
+                            <option value="rodinny-dum">Rodinný dům</option>
+                            <option value="komercni-prostor">Komerční prostor</option>
+                            <option value="hotel-restaurace">Hotel / Restaurace</option>
+                            <option value="kulturni-instituce">Kulturní instituce</option>
+                            <option value="prumyslovy-objekt">Průmyslový objekt</option>
+                            <option value="jine">Jiné</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="area">Přibližná plocha (m²)</label>
+                        <input type="number" id="area" name="area" placeholder="např. 80" min="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Lokalita</label>
+                        <input type="text" id="location" name="location" placeholder="např. Praha, Plzeň">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="purpose">Účel skenování *</label>
+                    <select id="purpose" name="purpose" required>
+                        <option value="">Vyberte účel</option>
+                        <option value="prodej">Prodej nemovitosti</option>
+                        <option value="pronajem">Pronájem nemovitosti</option>
+                        <option value="marketing">Marketing / Prezentace</option>
+                        <option value="dokumentace">Dokumentace prostoru</option>
+                        <option value="archiv">Archivace / Digitalizace</option>
+                        <option value="jine">Jiné</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="services">Požadované služby</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="3d-scan"> 3D skenování
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="pudorys"> Půdorys
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="fotografie"> Profesionální fotografie
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="video"> Video prohlídka
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="services" value="google-street"> Google Street View
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="timeline">Preferovaný termín realizace</label>
+                    <select id="timeline" name="timeline">
+                        <option value="">Vyberte termín</option>
+                        <option value="co-nejdrive">Co nejdříve</option>
+                        <option value="tyden">Do týdne</option>
+                        <option value="mesic">Do měsíce</option>
+                        <option value="flexibilni">Flexibilní</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Zpráva / Doplňující informace</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Zde můžete uvést jakékoliv další informace, požadavky nebo dotazy..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label consent-label">
+                        <input type="checkbox" name="consent" required>
+                        Souhlasím se zpracováním osobních údajů pro účely zpracování poptávky *
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-submit">Odeslat poptávku</button>
+                
+                <div id="form-message" class="form-message"></div>
+            </form>
         </div>
     </div>
 </section>
@@ -1042,7 +1139,7 @@
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                 <circle cx="12" cy="10" r="3"></circle>
                             </svg>
-                            <span>Dřevěná 99/3, Vnitřní Město, 301 00 Plzeň</span>
+                            <span>Radyňská 33, 326 00 Plzeň</span>
                         </li>
                         <li>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1226,6 +1323,101 @@
             priceValue.textContent = new Intl.NumberFormat('cs-CZ').format(Math.round(totalPrice));
         });
     });
+    </script>
+    
+    <!-- Kontaktní formulář JavaScript - Realvisor API -->
+    <script>
+    (function() {
+        var API_URL = 'https://api-production-88cf.up.railway.app/api/v1/public/forms/kontaktni-formu-67325/submit';
+        
+        var form = document.getElementById('contact-form');
+        if (!form) return;
+        
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            var btn = form.querySelector('button[type="submit"]');
+            var origText = btn ? btn.textContent : '';
+            if (btn) { 
+                btn.disabled = true; 
+                btn.textContent = 'Odesílám...'; 
+            }
+            
+            var fd = new FormData(form);
+            
+            // Zpracování jména
+            var fullName = (fd.get('name') || '').toString().trim();
+            var nameParts = fullName.split(/\s+/);
+            
+            // Zpracování služeb (checkboxy)
+            var services = fd.getAll('services').join(', ');
+            
+            // Sestavení payload podle Realvisor struktury
+            var payload = {
+                firstName: nameParts[0] || '',
+                lastName: nameParts.slice(1).join(' ') || '',
+                email: (fd.get('email') || '').toString().trim(),
+                phone: (fd.get('phone') || '').toString().trim(),
+                data: {
+                    'property-type': (fd.get('property-type') || '').toString(),
+                    'property-area': (fd.get('area') || '').toString(),
+                    'property-location': (fd.get('location') || '').toString(),
+                    'purpose': (fd.get('purpose') || '').toString(),
+                    'timeline': (fd.get('timeline') || '').toString(),
+                    'services': services,
+                    'message': (fd.get('message') || '').toString(),
+                    'consent': !!(fd.get('consent'))
+                }
+            };
+            
+            // Vyčistit prázdné hodnoty
+            Object.keys(payload.data).forEach(function(k) {
+                if (!payload.data[k] && payload.data[k] !== false) {
+                    delete payload.data[k];
+                }
+            });
+            
+            // Log pro testování
+            console.log('Odesílám na Realvisor API:', JSON.stringify(payload, null, 2));
+            
+            try {
+                var res = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                
+                var json = await res.json();
+                
+                if (res.ok) {
+                    // Úspěšné odeslání
+                    form.innerHTML = '<p style="text-align:center;padding:40px 20px;font-weight:600;color:#10b981;">Děkujeme za váš zájem! Brzy se vám ozveme.</p>';
+                    
+                    // Google Analytics tracking
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'form_submission', {
+                            'event_category': 'Contact',
+                            'event_label': 'Contact Form Realvisor',
+                            'value': payload.data['property-area']
+                        });
+                    }
+                } else {
+                    alert(json.message || 'Chyba při odesílání formuláře.');
+                    if (btn) { 
+                        btn.disabled = false; 
+                        btn.textContent = origText; 
+                    }
+                }
+            } catch (err) {
+                console.error('Error:', err);
+                alert('Chyba připojení. Zkuste to prosím znovu.');
+                if (btn) { 
+                    btn.disabled = false; 
+                    btn.textContent = origText; 
+                }
+            }
+        });
+    })();
     </script>
     
 <script src="js/main.js"></script>
