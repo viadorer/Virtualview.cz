@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "generatedAt": "2026-03-06T21:17:17.211Z",
+  "generatedBy": "Hugo Orchestrator AIO Engine",
+  "projectType": "html",
+  "schemas": {
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Virtual View",
+      "description": "Virtual View"
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Co je Virtual View?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Virtual View je firma, která se specializuje na profesionální 3D skenování nemovitostí pomocí technologie Matterport. Vytváří virtuální 3D prohlídky nemovitostí pro realitní kanceláře, developery a majitele nemovitostí."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jaké služby Virtual View nabízí?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Virtual View nabízí služby 3D skenování nemovitostí a vytváření virtuálních 3D prohlídek."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Pro koho je Virtual View určen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Služby Virtual View jsou určeny pro realitní kanceláře, developery a majitele nemovitostí."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kde Virtual View sídlí?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Virtual View sídlí na adrese Radyňská 33, Plzeň, 326 00, Česká republika."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jak mohu kontaktovat Virtual View?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Virtual View lze kontaktovat telefonicky na čísle +420603834921 nebo e-mailem na info@virtualview.cz."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kde Virtual View působí?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Virtual View působí v České republice."
+          }
+        }
+      ]
+    }
+  }
+}
