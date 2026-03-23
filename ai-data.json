@@ -1,6 +1,6 @@
 {
   "@context": "https://schema.org",
-  "generatedAt": "2026-03-23T07:03:18.724Z",
+  "generatedAt": "2026-03-23T08:02:43.179Z",
   "generatedBy": "Hugo Orchestrator AIO Engine",
   "projectType": "html",
   "schemas": {
@@ -17,42 +17,42 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Co je Virtual View?",
+          "name": "Co je VirtualView?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Virtual View je firma, která se specializuje na profesionální 3D skenování nemovitostí pomocí technologie Matterport. Vytváří virtuální 3D prohlídky pro realitní kanceláře, developery a majitele nemovitostí."
+            "text": "VirtualView je firma, která se specializuje na profesionální 3D skenování nemovitostí s využitím technologie Matterport. Vytváří virtuální 3D prohlídky nemovitostí pro realitní kanceláře, developery a majitele nemovitostí."
           }
         },
         {
           "@type": "Question",
-          "name": "Jaké služby Virtual View nabízí?",
+          "name": "Jaké služby VirtualView nabízí?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Virtual View nabízí 3D skenování nemovitostí a vytváření virtuálních 3D prohlídek."
+            "text": "VirtualView nabízí služby 3D skenování nemovitostí a vytváření virtuálních prohlídek."
           }
         },
         {
           "@type": "Question",
-          "name": "Pro koho je služba Virtual View určena?",
+          "name": "Pro koho je VirtualView určen?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Služby Virtual View jsou určeny pro realitní kanceláře, developery a majitele nemovitostí."
+            "text": "VirtualView je určen pro realitní kanceláře, developery a majitele nemovitostí."
           }
         },
         {
           "@type": "Question",
-          "name": "Kde Virtual View sídlí?",
+          "name": "Kde VirtualView sídlí?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Virtual View sídlí v Plzni na adrese Radyňská 33."
+            "text": "VirtualView sídlí na adrese Radyňská 33, Plzeň, 326 00."
           }
         },
         {
           "@type": "Question",
-          "name": "Jak mohu kontaktovat Virtual View?",
+          "name": "Jak mohu kontaktovat VirtualView?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Virtual View lze kontaktovat telefonicky na čísle +420603834921 nebo e-mailem na info@virtualview.cz."
+            "text": "VirtualView lze kontaktovat telefonicky na čísle +420603834921 nebo e-mailem na info@virtualview.cz."
           }
         }
       ]
